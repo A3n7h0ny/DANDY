@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy & POPIA | Dandy Hair · Sandton, Johannesburg</title>
+<meta name="description" content="Dandy Hair's privacy policy and POPIA compliance notice. How we collect, use and protect your personal information.">
+<link rel="canonical" href="https://www.dandyhair.co.za/privacy-policy.html">
+<meta name="theme-color" content="#9b59b6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* All CSS stays exactly the same as before */
+:root{
+  --bg:        #fffafc;
+  --ink:       #2c1a2e;
+  --brown:     #3d1f2e;
+  --copper:    #e84393;
+  --gold:      #f1c40f;
+  --cream:     #fdf2f8;
+  --sand:      #f5e6f0;
+  --warm:      #d3549b;
+  --light:     #fff0f5;
+  --muted:     #b5658f;
+  --accent:    #ff69b4;
+  --purple:    #9b59b6;
+  --pink:      #ff85b3;
+  --red:       #e74c3c;
+  --beige:     #f5f0e6;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Libre Baskerville',Georgia,serif;
+  background:var(--bg);
+  color:var(--ink);
+  overflow-x:hidden;
+  cursor:none;
+}
+body::after{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9998;opacity:0.6;
+}
+
+/* CURSOR */
+.cur{position:fixed;z-index:99999;pointer-events:none;width:10px;height:10px;border-radius:50%;background:var(--accent);transform:translate(-50%,-50%);transition:width .25s,height .25s,background .3s;mix-blend-mode:multiply;}
+.cur-ring{position:fixed;z-index:99998;pointer-events:none;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--copper);transform:translate(-50%,-50%);opacity:0.6;transition:width .3s,height .3s,opacity .3s;}
+.cur.big{width:40px;height:40px;background:rgba(180,101,29,0.15);}
+.cur-ring.big{width:56px;height:56px;opacity:0.2;}
+
+/* GOLD BAR */
+.gold-bar{height:3px;background:linear-gradient(90deg,var(--accent),var(--purple),var(--accent));background-size:200% 100%;animation:shimmer 3s linear infinite;}
+@keyframes shimmer{0%{background-position:200% 0;}100%{background-position:-200% 0;}}
+
+/* SIDE NAV */
+.sidenav{
+  position:fixed;left:0;top:0;bottom:0;
+  width:72px;z-index:1000;
+  background:var(--ink);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:space-between;
+  padding:28px 0;
+}
+.sidenav-logo{
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  transform:rotate(180deg);
+  font-family:'Playfair Display',serif;
+  font-size:13px;font-weight:700;
+  color:var(--accent);
+  letter-spacing:0.15em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.sidenav-back{
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+  font-family:'Space Mono',monospace;
+  font-size:9px;letter-spacing:0.15em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.25);
+  text-decoration:none;
+  transition:color .3s;
+  display:flex;align-items:center;gap:6px;
+}
+.sidenav-back:hover{color:var(--accent);}
+.sidenav-call{
+  background:var(--accent);
+  color:white;
+  font-family:'Space Mono',monospace;
+  font-size:9px;letter-spacing:0.12em;
+  text-transform:uppercase;
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+  padding:14px 10px;
+  text-decoration:none;
+  transition:background .3s;
+  border-radius:3px;
+}
+.sidenav-call:hover{background:var(--purple);}
+
+/* MAIN */
+main{margin-left:72px;}
+
+/* HERO */
+.page-hero{
+  min-height:40vh;
+  background:var(--ink);
+  display:flex;align-items:flex-end;
+  padding:80px 80px 60px;
+  position:relative;overflow:hidden;
+}
+.page-hero::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(
+    170deg,transparent 0px,transparent 8px,
+    rgba(255,255,255,0.015) 8px,rgba(255,255,255,0.015) 9px
+  );
+}
+.page-hero-bg-text{
+  position:absolute;right:-20px;bottom:-40px;
+  font-family:'Playfair Display',serif;
+  font-size:200px;font-weight:900;font-style:italic;
+  color:rgba(255,255,255,0.02);
+  line-height:1;pointer-events:none;
+  white-space:nowrap;
+}
+.hero-inner{position:relative;z-index:2;}
+.hero-eyebrow{
+  font-family:'Space Mono',monospace;
+  font-size:10px;letter-spacing:0.25em;
+  text-transform:uppercase;color:var(--accent);
+  margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+  opacity:0;transform:translateY(16px);
+  animation:up .7s ease forwards .3s;
+}
+.hero-eyebrow::before{content:'—';}
+.page-hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(44px,6vw,80px);
+  font-weight:900;color:var(--cream);
+  letter-spacing:-2px;line-height:1.0;
+  margin-bottom:16px;
+  opacity:0;transform:translateY(20px);
+  animation:up .8s ease forwards .5s;
+}
+.page-hero h1 em{font-style:italic;color:var(--accent);}
+.page-hero p{
+  font-size:15px;font-weight:400;
+  color:rgba(255,255,255,0.4);
+  line-height:1.8;max-width:560px;
+  opacity:0;transform:translateY(16px);
+  animation:up .8s ease forwards .7s;
+}
+.updated-tag{
+  display:inline-block;margin-top:16px;
+  font-family:'Space Mono',monospace;
+  font-size:9px;letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.2);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:6px 14px;border-radius:2px;
+}
+
+/* TICKER */
+.ticker{
+  background:var(--accent);overflow:hidden;padding:10px 0;
+}
+.ticker-track{
+  display:flex;gap:0;
+  animation:ticker 18s linear infinite;
+  width:max-content;
+}
+.ticker-item{
+  font-family:'Space Mono',monospace;
+  font-size:9px;letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:var(--cream);font-weight:700;
+  padding:0 36px;
+  display:flex;align-items:center;gap:14px;
+  white-space:nowrap;
+}
+.ticker-item::after{content:'◆';font-size:5px;color:var(--cream);}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* CONTENT */
+.content-wrap{
+  max-width:860px;
+  margin:0 auto;
+  padding:60px 40px 80px;
+}
+
+/* POLICY CARD */
+.policy-card{
+  background:var(--beige);
+  border:1px solid var(--sand);
+  border-radius:4px;
+  overflow:hidden;
+  margin-bottom:20px;
+  box-shadow:0 8px 40px rgba(26,15,0,0.06);
+}
+.policy-section{
+  padding:36px 44px;
+  border-bottom:1px solid var(--sand);
+}
+.policy-section:last-child{border-bottom:none;}
+.policy-section h2{
+  font-family:'Playfair Display',serif;
+  font-size:20px;font-weight:700;
+  color:var(--ink);margin-bottom:16px;
+  display:flex;align-items:center;gap:14px;
+  letter-spacing:-0.3px;
+}
+.sec-icon{
+  width:36px;height:36px;border-radius:3px;
+  background:rgba(255,105,180,0.1);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.sec-icon svg{width:18px;height:18px;stroke:var(--accent);stroke-width:1.5;}
+.policy-section p{
+  font-size:15px;color:var(--muted);
+  line-height:1.9;margin-bottom:12px;
+}
+.policy-section p:last-child{margin-bottom:0;}
+.policy-section ul{list-style:none;margin-top:10px;}
+.policy-section ul li{
+  font-size:14px;color:var(--muted);
+  line-height:1.8;
+  padding:6px 0 6px 22px;
+  position:relative;
+  border-bottom:1px solid rgba(0,0,0,0.04);
+}
+.policy-section ul li:last-child{border-bottom:none;}
+.policy-section ul li::before{
+  content:'';position:absolute;left:0;top:50%;
+  transform:translateY(-50%);
+  width:5px;height:5px;border-radius:50%;
+  background:var(--accent);
+}
+.policy-section ul li strong{color:var(--ink);font-weight:700;}
+.info-box{
+  background:rgba(255,105,180,0.05);
+  border:1px solid rgba(255,105,180,0.15);
+  border-left:3px solid var(--accent);
+  border-radius:2px;padding:16px 20px;
+  margin-top:14px;
+}
+.info-box p{
+  font-family:'Space Mono',monospace;
+  font-size:11px;letter-spacing:0.04em;
+  color:var(--ink);margin:0;line-height:1.7;
+}
+
+/* RIGHTS */
+.rights-section{
+  background:var(--ink);
+  border-radius:4px;
+  padding:48px 44px;
+  margin-bottom:20px;
+  position:relative;overflow:hidden;
+}
+.rights-section::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(
+    170deg,transparent 0px,transparent 8px,
+    rgba(255,255,255,0.015) 8px,rgba(255,255,255,0.015) 9px
+  );
+}
+.rights-inner{position:relative;z-index:1;}
+.rights-label{
+  font-family:'Space Mono',monospace;
+  font-size:9px;letter-spacing:0.25em;
+  text-transform:uppercase;color:var(--accent);
+  margin-bottom:16px;
+  display:flex;align-items:center;gap:10px;
+}
+.rights-label::before{content:'—';}
+.rights-section h3{
+  font-family:'Playfair Display',serif;
+  font-size:28px;font-weight:900;font-style:italic;
+  color:var(--cream);letter-spacing:-1px;
+  margin-bottom:8px;
+}
+.rights-section > p{
+  font-size:14px;color:rgba(255,255,255,0.35);
+  line-height:1.8;margin-bottom:32px;
+  max-width:560px;
+}
+.rights-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:10px;
+}
+.right-item{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:3px;padding:18px 20px;
+  display:flex;align-items:flex-start;gap:12px;
+  transition:background .3s;
+}
+.right-item:hover{background:rgba(255,255,255,0.07);}
+.r-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;margin-top:7px;
+}
+.right-item strong{
+  display:block;font-size:13px;font-weight:700;
+  color:var(--cream);margin-bottom:3px;
+  font-family:'Playfair Display',serif;
+}
+.right-item span{
+  font-size:11px;color:rgba(255,255,255,0.3);
+  font-family:'Space Mono',monospace;
+  letter-spacing:0.03em;line-height:1.6;
+}
+
+/* CONSENT CARD */
+.consent-card{
+  background:var(--beige);
+  border:1px solid var(--sand);
+  border-radius:4px;overflow:hidden;
+  margin-bottom:20px;
+  box-shadow:0 8px 40px rgba(26,15,0,0.06);
+}
+.consent-head{
+  background:linear-gradient(135deg,var(--ink),var(--purple));
+  padding:32px 44px;
+  position:relative;overflow:hidden;
+}
+.consent-head::before{
+  content:'POPIA';
+  position:absolute;right:-10px;top:-20px;
+  font-family:'Playfair Display',serif;
+  font-size:120px;font-weight:900;font-style:italic;
+  color:rgba(255,255,255,0.03);
+  line-height:1;pointer-events:none;
+}
+.consent-head-inner{position:relative;z-index:1;}
+.consent-head h3{
+  font-family:'Playfair Display',serif;
+  font-size:24px;font-weight:700;font-style:italic;
+  color:var(--cream);margin-bottom:8px;
+}
+.consent-head p{
+  font-size:13px;color:rgba(255,255,255,0.45);
+  line-height:1.7;font-family:'Space Mono',monospace;
+  letter-spacing:0.03em;font-style:normal;
+}
+.consent-body{padding:36px 44px;}
+
+/* hidden formspree */
+#consentFormData{display:none;}
+
+/* PROGRESS */
+.progress-wrap{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:24px;
+}
+.progress-track{
+  flex:1;height:3px;
+  background:var(--sand);
+  border-radius:100px;overflow:hidden;
+}
+.progress-fill{
+  height:100%;width:0%;
+  background:linear-gradient(90deg,var(--accent),var(--purple));
+  border-radius:100px;
+  transition:width .4s ease;
+}
+.progress-label{
+  font-family:'Space Mono',monospace;
+  font-size:10px;letter-spacing:0.1em;
+  color:var(--muted);white-space:nowrap;
+  min-width:52px;text-align:right;
+}
+
+/* CHECKBOXES */
+.consent-items{
+  border:1px solid var(--sand);
+  border-radius:3px;overflow:hidden;
+  margin-bottom:28px;
+}
+.consent-item{
+  display:flex;align-items:flex-start;gap:16px;
+  padding:20px 24px;
+  border-bottom:1px solid var(--sand);
+  transition:background .2s;cursor:none;
+}
+.consent-item:last-child{border-bottom:none;}
+.consent-item:hover{background:rgba(255,105,180,0.03);}
+.consent-item input[type="checkbox"]{
+  width:18px;height:18px;
+  border:2px solid var(--sand);
+  border-radius:3px;
+  cursor:none;accent-color:var(--purple);
+  flex-shrink:0;margin-top:3px;
+}
+.consent-item label{flex:1;cursor:none;}
+.consent-item label strong{
+  display:block;font-size:14px;
+  font-weight:700;color:var(--ink);
+  margin-bottom:4px;
+  font-family:'Playfair Display',serif;
+}
+.consent-item label small{
+  font-size:12px;color:var(--muted);
+  line-height:1.6;
+  font-family:'Space Mono',monospace;
+  letter-spacing:0.02em;
+  font-style:normal;
+}
+.c-icon{
+  width:30px;height:30px;border-radius:3px;
+  background:rgba(255,105,180,0.07);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:2px;
+}
+.c-icon svg{width:14px;height:14px;stroke:var(--accent);stroke-width:1.5;}
+
+/* ACCEPT BTN */
+.accept-btn{
+  width:100%;padding:16px;
+  background:linear-gradient(135deg,var(--accent),var(--purple));
+  color:var(--cream);border:none;
+  font-family:'Space Mono',monospace;
+  font-size:11px;font-weight:700;
+  letter-spacing:0.15em;text-transform:uppercase;
+  border-radius:2px;cursor:none;
+  transition:all .3s;position:relative;overflow:hidden;
+}
+.accept-btn::after{
+  content:'';position:absolute;
+  top:0;left:-100%;width:100%;height:100%;
+  background:rgba(0,0,0,0.15);transition:left .3s;z-index:0;
+}
+.accept-btn:hover:not(:disabled)::after{left:0;}
+.accept-btn span{position:relative;z-index:1;}
+.accept-btn:disabled{opacity:0.5;cursor:not-allowed;}
+.accept-btn:disabled::after{display:none;}
+
+/* RESULT MESSAGES */
+.result-msg{
+  display:none;border-radius:3px;
+  padding:18px 22px;margin-top:18px;
+  font-family:'Space Mono',monospace;
+  font-size:12px;letter-spacing:0.03em;line-height:1.6;
+}
+.result-msg.success{
+  background:rgba(255,105,180,0.08);
+  border:1px solid rgba(255,105,180,0.2);
+  border-left:3px solid var(--accent);
+  color:var(--ink);
+}
+.result-msg.error{
+  background:rgba(231,76,60,0.08);
+  border:1px solid rgba(231,76,60,0.2);
+  border-left:3px solid var(--red);
+  color:#8b2500;
+}
+
+/* REGULATOR */
+.regulator-card{
+  background:var(--beige);
+  border:1px solid var(--sand);
+  border-radius:4px;padding:32px 44px;
+  margin-bottom:20px;
+  display:flex;align-items:flex-start;gap:20px;
+}
+.reg-icon{
+  width:48px;height:48px;border-radius:3px;
+  background:rgba(255,105,180,0.08);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.reg-icon svg{width:22px;height:22px;stroke:var(--accent);stroke-width:1.5;}
+.reg-info h4{
+  font-family:'Playfair Display',serif;
+  font-size:17px;font-weight:700;
+  color:var(--ink);margin-bottom:8px;
+}
+.reg-info p{
+  font-size:13px;color:var(--muted);
+  line-height:1.7;margin-bottom:12px;
+}
+.reg-links{display:flex;flex-wrap:wrap;gap:8px;}
+.reg-link{
+  font-family:'Space Mono',monospace;
+  font-size:10px;letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--accent);text-decoration:none;
+  padding:5px 14px;border-radius:2px;
+  border:1px solid rgba(255,105,180,0.2);
+  background:rgba(255,105,180,0.04);
+  transition:all .3s;
+}
+.reg-link:hover{background:var(--accent);color:var(--cream);}
+
+/* FOOTER */
+footer{
+  background:var(--ink);
+  padding:32px 80px;
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:16px;
+}
+.footer-brand{
+  font-family:'Playfair Display',serif;
+  font-size:18px;font-weight:900;font-style:italic;
+  color:var(--accent);
+}
+.footer-mid{
+  font-family:'Space Mono',monospace;
+  font-size:9px;letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.3);text-align:center;
+}
+.footer-back a{
+  font-family:'Space Mono',monospace;
+  font-size:10px;letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.3);text-decoration:none;
+  transition:color .3s;
+}
+.footer-back a:hover{color:var(--accent);}
+
+/* ANIMATIONS */
+@keyframes up{to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
+
+/* MOBILE */
+@media(max-width:1024px){
+  main{margin-left:0;}
+  .sidenav{
+    position:fixed;top:0;left:0;right:0;bottom:auto;
+    width:auto;height:60px;flex-direction:row;padding:0 20px;
+  }
+  .sidenav-logo{writing-mode:horizontal-tb;transform:none;font-size:16px;}
+  .sidenav-back{writing-mode:horizontal-tb;transform:none;font-size:9px;}
+  .sidenav-call{writing-mode:horizontal-tb;transform:none;padding:8px 16px;font-size:9px;}
+  .page-hero{padding:90px 24px 48px;min-height:auto;}
+  .content-wrap{padding:40px 20px 60px;}
+  .policy-section,.consent-body,.consent-head,.rights-section,.regulator-card{padding:28px 24px;}
+  .rights-grid{grid-template-columns:1fr;}
+  .regulator-card{flex-direction:column;}
+  footer{padding:28px 24px;flex-direction:column;text-align:center;}
+  body{cursor:auto;}
+  .cur,.cur-ring{display:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+<div class="gold-bar"></div>
+
+<!-- SIDE NAV -->
+<nav class="sidenav">
+  <a href="index.html" class="sidenav-logo">Dandy Hair</a>
+  <a href="index.html" class="sidenav-back">← Home</a>
+  <a href="tel:0676531696" class="sidenav-call">Call Now</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<div class="page-hero" id="top">
+  <div class="page-hero-bg-text">POPIA</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">POPIA Compliant · South Africa</div>
+    <h1>Privacy<br><em>Policy.</em></h1>
+    <p>Dandy Hair is committed to protecting your personal information in accordance with South Africa's Protection of Personal Information Act (POPIA Act 4 of 2013).</p>
+    <div class="updated-tag">Last Updated: June 2026</div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-item">Your Privacy Matters</div>
+    <div class="ticker-item">POPIA Compliant</div>
+    <div class="ticker-item">South Africa</div>
+    <div class="ticker-item">Your Data · Your Rights</div>
+    <div class="ticker-item">Dandy Hair</div>
+    <div class="ticker-item">Sandton · JHB</div>
+    <div class="ticker-item">Your Privacy Matters</div>
+    <div class="ticker-item">POPIA Compliant</div>
+    <div class="ticker-item">South Africa</div>
+    <div class="ticker-item">Your Data · Your Rights</div>
+    <div class="ticker-item">Dandy Hair</div>
+    <div class="ticker-item">Sandton · JHB</div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content-wrap">
+
+  <div class="policy-card reveal">
+    <div class="policy-section">
+      <h2>
+        <div class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        Who We Are
+      </h2>
+      <p><strong>Dandy Hair</strong> is a full-service beauty studio based at Shop 108 in Sandton, Johannesburg. We are the responsible party for all personal information collected through this website and during bookings.</p>
+      <div class="info-box">
+        <p><strong>Address:</strong> Shop 108, Sandton, Johannesburg, 2191 &nbsp;·&nbsp; <strong>Phone:</strong> 067 653 1696</p>
+      </div>
+    </div>
+
+    <div class="policy-section">
+      <h2>
+        <div class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        Information We Collect
+      </h2>
+      <p>When you contact us or book an appointment, we may collect:</p>
+      <ul>
+        <li><strong>Contact details:</strong> Name, phone number, email address</li>
+        <li><strong>Booking information:</strong> Service requested, appointment details</li>
+        <li><strong>Website usage:</strong> IP address, browser type, pages visited</li>
+        <li><strong>Communications:</strong> Messages sent via our contact form, WhatsApp or Instagram DM</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>
+        <div class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        How We Use Your Information
+      </h2>
+      <p>Your personal information is used only for the following purposes:</p>
+      <ul>
+        <li>To confirm and manage your salon appointments</li>
+        <li>To contact you about your booking or service</li>
+        <li>To send appointment reminders if requested</li>
+        <li>To improve our services and website</li>
+        <li>To comply with legal obligations under South African law</li>
+      </ul>
+      <p>We do not sell or share your personal information with third parties for marketing purposes.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>
+        <div class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        Data Security & Retention
+      </h2>
+      <p>We take appropriate measures to protect your personal information against unauthorised access or misuse. Client information is retained for up to 3 years for booking records and legal compliance, after which it is securely deleted.</p>
+      <div class="info-box">
+        <p>To request deletion of your personal information at any time, contact us at <strong>067 653 1696</strong> or visit us at Shop 108, Sandton, Johannesburg.</p>
+      </div>
+    </div>
+
+    <div class="policy-section">
+      <h2>
+        <div class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        Cookies
+      </h2>
+      <p>Our website uses only essential cookies required for the site to function. We do not use tracking, advertising or third-party analytics cookies. By continuing to use our website you consent to essential cookies only.</p>
+    </div>
+  </div>
+
+  <!-- RIGHTS -->
+  <div class="rights-section reveal d1">
+    <div class="rights-inner">
+      <div class="rights-label">Your Rights</div>
+      <h3>Your POPIA Rights.</h3>
+      <p>As a South African data subject, the Protection of Personal Information Act grants you the following rights regarding your personal information held by Dandy Hair.</p>
+      <div class="rights-grid">
+        <div class="right-item">
+          <div class="r-dot"></div>
+          <div><strong>Right to Access</strong><span>Request a copy of your personal information we hold</span></div>
+        </div>
+        <div class="right-item">
+          <div class="r-dot"></div>
+          <div><strong>Right to Rectification</strong><span>Correct inaccurate or incomplete information</span></div>
+        </div>
+        <div class="right-item">
+          <div class="r-dot"></div>
+          <div><strong>Right to Deletion</strong><span>Request deletion of your personal information</span></div>
+        </div>
+        <div class="right-item">
+          <div class="r-dot"></div>
+          <div><strong>Right to Object</strong><span>Object to certain types of processing</span></div>
+        </div>
+        <div class="right-item">
+          <div class="r-dot"></div>
+          <div><strong>Right to Withdraw</strong><span>Withdraw your consent at any time</span></div>
+        </div>
+        <div class="right-item">
+          <div class="r-dot"></div>
+          <div><strong>Right to Complain</strong><span>Lodge a complaint with the Information Regulator</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONSENT -->
+  <div class="consent-card reveal d2">
+    <div class="consent-head">
+      <div class="consent-head-inner">
+        <h3>Your Consent</h3>
+        <p>Required under POPIA · Check all four boxes to accept</p>
+      </div>
+    </div>
+    <div class="consent-body">
+
+      <form id="consentFormData" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="consent_date" id="consentDate">
+        <input type="text" name="user_ip" id="userIp">
+        <input type="text" name="user_agent" id="userAgent">
+        <input type="text" name="consent_data_collection" id="c1val">
+        <input type="text" name="consent_contact" id="c2val">
+        <input type="text" name="consent_retention" id="c3val">
+        <input type="text" name="consent_acknowledgment" id="c4val">
+        <input type="text" name="_subject" value="POPIA Consent — Dandy Hair">
+      </form>
+
+      <div class="progress-wrap">
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-label" id="progressLabel">0 of 4</div>
+      </div>
+
+      <div class="consent-items">
+
+        <div class="consent-item">
+          <input type="checkbox" id="c1">
+          <div class="c-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+          </div>
+          <label for="c1">
+            <strong>Data Collection & Processing</strong>
+            <small>I consent to Dandy Hair collecting and storing my personal information (name, phone number, email) for the purpose of providing beauty services and managing my appointments.</small>
+          </label>
+        </div>
+
+        <div class="consent-item">
+          <input type="checkbox" id="c2">
+          <div class="c-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <label for="c2">
+            <strong>Communication</strong>
+            <small>I consent to being contacted via phone, SMS, WhatsApp or Instagram DM regarding my appointment, booking confirmation, and service updates. I can opt out at any time.</small>
+          </label>
+        </div>
+
+        <div class="consent-item">
+          <input type="checkbox" id="c3">
+          <div class="c-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <label for="c3">
+            <strong>Data Retention</strong>
+            <small>I consent to my information being retained for up to 3 years for booking records and legal compliance. I may request deletion at any time by contacting Dandy Hair directly.</small>
+          </label>
+        </div>
+
+        <div class="consent-item">
+          <input type="checkbox" id="c4">
+          <div class="c-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <label for="c4">
+            <strong>Policy Acknowledgement</strong>
+            <small>I confirm I have read and understood this Privacy Policy and my rights under South Africa's Protection of Personal Information Act (POPIA Act 4 of 2013).</small>
+          </label>
+        </div>
+
+      </div>
+
+      <button class="accept-btn" id="acceptBtn" disabled>
+        <span id="btnText">✓ Accept All & Continue</span>
+      </button>
+
+      <div class="result-msg success" id="successMsg">
+        <strong>✓ Consent Recorded</strong><br>
+        Thank you. Your consent has been saved. You can exercise your POPIA rights at any time by contacting us at 067 653 1696.
+      </div>
+      <div class="result-msg error" id="errorMsg">
+        <strong>⚠ Submission issue</strong><br>
+        Your consent has been saved locally. Contact us at 067 653 1696 if you need a formal record.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REGULATOR -->
+  <div class="regulator-card reveal d3">
+    <div class="reg-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </div>
+    <div class="reg-info">
+      <h4>South African Information Regulator</h4>
+      <p>If you believe your privacy rights have been violated, you have the right to lodge a complaint with the Information Regulator — the official South African body that oversees POPIA compliance.</p>
+      <div class="reg-links">
+        <a href="https://www.inforegulator.org.za" target="_blank" rel="noopener" class="reg-link">inforegulator.org.za</a>
+        <a href="mailto:POPIAComplaints@inforegulator.org.za" class="reg-link">POPIAComplaints@inforegulator.org.za</a>
+        <a href="tel:0124064818" class="reg-link">012 406 4818</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end content-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Dandy Hair</div>
+  <div class="footer-mid">
+    Shop 108 · Sandton · Johannesburg, 2191<br>
+    © 2026 Dandy Hair · POPIA Act 4 of 2013
+  </div>
+  <div class="footer-back">
+    <a href="index.html">← Back to Home</a>
+  </div>
+</footer>
+
+</main>
+
+<script>
+// CURSOR
+const cur=document.getElementById('cur');
+const curRing=document.getElementById('curRing');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cur.style.left=mx+'px';cur.style.top=my+'px';
+});
+(function animRing(){
+  rx+=(mx-rx)*0.1;ry+=(my-ry)*0.1;
+  curRing.style.left=rx+'px';curRing.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+})();
+document.querySelectorAll('a,button,.consent-item').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.classList.add('big');curRing.classList.add('big');});
+  el.addEventListener('mouseleave',()=>{cur.classList.remove('big');curRing.classList.remove('big');});
+});
+
+// REVEAL
+const revEls=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});
+},{threshold:0.1});
+revEls.forEach(el=>obs.observe(el));
+
+// CONSENT
+const checks=[
+  document.getElementById('c1'),
+  document.getElementById('c2'),
+  document.getElementById('c3'),
+  document.getElementById('c4')
+];
+const acceptBtn=document.getElementById('acceptBtn');
+const fill=document.getElementById('progressFill');
+const label=document.getElementById('progressLabel');
+
+function updateProgress(){
+  const n=checks.filter(c=>c.checked).length;
+  fill.style.width=(n/4*100)+'%';
+  label.textContent=n+' of 4';
+  acceptBtn.disabled=n<4;
+}
+checks.forEach(c=>c.addEventListener('change',updateProgress));
+
+let userIp='N/A';
+fetch('https://api.ipify.org?format=json').then(r=>r.json()).then(d=>userIp=d.ip).catch(()=>{});
+
+acceptBtn.addEventListener('click',async function(){
+  document.getElementById('btnText').textContent='Saving…';
+  acceptBtn.disabled=true;
+
+  const data={
+    accepted:true,
+    timestamp:new Date().toISOString(),
+    ip:userIp,
+    consents:{c1:checks[0].checked,c2:checks[1].checked,c3:checks[2].checked,c4:checks[3].checked}
+  };
+  localStorage.setItem('dandyhairPOPIA',JSON.stringify(data));
+
+  document.getElementById('consentDate').value=data.timestamp;
+  document.getElementById('userIp').value=userIp;
+  document.getElementById('userAgent').value=navigator.userAgent;
+  document.getElementById('c1val').value=checks[0].checked?'Yes':'No';
+  document.getElementById('c2val').value=checks[1].checked?'Yes':'No';
+  document.getElementById('c3val').value=checks[2].checked?'Yes':'No';
+  document.getElementById('c4val').value=checks[3].checked?'Yes':'No';
+
+  const form=document.getElementById('consentFormData');
+  try{
+    const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+    if(res.ok){document.getElementById('successMsg').style.display='block';}
+    else{document.getElementById('errorMsg').style.display='block';}
+  }catch{document.getElementById('errorMsg').style.display='block';}
+
+  document.getElementById('btnText').textContent='✓ Consent Accepted';
+});
+
+// Check saved consent
+window.addEventListener('load',()=>{
+  try{
+    const saved=JSON.parse(localStorage.getItem('dandyhairPOPIA'));
+    if(saved&&saved.accepted){
+      acceptBtn.disabled=true;
+      document.getElementById('btnText').textContent='✓ Already Accepted';
+      const s=document.getElementById('successMsg');
+      s.style.display='block';
+      s.innerHTML='<strong>✓ Already Recorded</strong><br>You have previously accepted our Privacy Policy. Thank you.';
+    }
+  }catch(e){}
+});
+</script>
+</body>
+</html>
